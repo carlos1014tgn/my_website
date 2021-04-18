@@ -5,39 +5,50 @@
 
 <html>
 <head>
-	<title>Carlos Gonzalez</title>
-	<link href="{% static '/css/contact.css'  %}" rel="stylesheet" type="text/css">
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-	
+	<title>Carlos Gonzalez</title>	
 </head>
 <body>
-  {% include 'home/navbar.html' %}
-<div class="container">
-    <form action="/email/" method="POST">
-      {% csrf_token %}
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link href="{% static '/css/navbar.css' %}" rel="stylesheet" type="text/css">
   
-      <label for="email_name">Name</label>
-      <input type="text" id="email_name" name="email_name" placeholder="Your name..">
+  <div class="topnav">
+      <ul id="nav">
+          <li><a href="/">Home</a></li>
+          <li><a href="/blockchain">Blockchain</a></li>
+          <li><a href="/data">Data</a></li>
+          <li><a class="active" href="/contact">Contact</a></li>
+      </ul>
+  </div>
 
-      <label for="email_sender">e-mail</label>
-      <input type="text" id="email_sender" name="email_sender" placeholder="Your email..">
-  
-      <label for="subject">Subject</label>
-      <input type="text" id="subject" name="subject" placeholder="Subject..">
-      <!--
-      <label for="country">Country</label>
-      <select id="country" name="country">
-        <option value="australia">Australia</option>
-        <option value="canada">Canada</option>
-        <option value="usa">USA</option>
-      </select>
-    -->
-  
-      <label for="message">Message</label>
-      <textarea id="message" name="message" placeholder="Write something.." style="height:200px"></textarea>
-  
-      <input type="submit" value="Submit">
-  
-    </form>
-  </div> 
-</body>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link href="{% static '/css/contact.css'  %}" rel="stylesheet" type="text/css">
+
+  <div class="container">
+      <form action="/email/" method="POST">
+        {% csrf_token %}
+    
+        <label for="email_name">Name</label>
+        <input type="text" id="email_name" name="email_name" placeholder="Your name..">
+
+        <label for="email_sender">e-mail</label>
+        <input type="text" id="email_sender" name="email_sender" placeholder="Your email..">
+    
+        <label for="subject">Subject</label>
+        <input type="text" id="subject" name="subject" placeholder="Subject..">
+        <!--
+        <label for="country">Country</label>
+        <select id="country" name="country">
+          <option value="australia">Australia</option>
+          <option value="canada">Canada</option>
+          <option value="usa">USA</option>
+        </select>
+      -->
+    
+        <label for="message">Message</label>
+        <textarea id="message" name="message" placeholder="Write something.." style="height:200px"></textarea>
+    
+        <input type="submit" value="Submit" id="submit_button">
+    
+      </form>
+    </div> 
+  </body>

@@ -14,8 +14,13 @@ body{
   	margin-right: auto;
 }
 
-#profile-wrapper{
-	border-color: red !important;
+#profile-wrapper, #main_box{
+	border-color: rgb(255, 102, 0) !important;
+}
+
+.card{
+	background-color: #404040;
+	color: white;
 }
 
 ul{
@@ -33,3 +38,7 @@ ul{
 	width:20px;
 	height: 20px;
 }
+
+
+
+    
