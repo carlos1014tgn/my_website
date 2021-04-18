@@ -1,5 +1,5 @@
 body{
-	background-color:#F8F8F8!important;
+	background-color:#121212 !important;
 }
 
 #profile-wrapper{
@@ -12,6 +12,10 @@ body{
 	border-radius: 50%;
 	margin-left: auto;
   	margin-right: auto;
+}
+
+#profile-wrapper{
+	border-color: red !important;
 }
 
 ul{

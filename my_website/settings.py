@@ -21,13 +21,19 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/3.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-49s=2x_e+%9f68=efdg$=p=ela)u0)^#i4n-xr4^hi^8%+i8yd'
+SECRET_KEY = 'django-insecure-2+cxeuqn0a@(sf!_%!6o6dn+ihitb439#d2nls$!+pl8%vsm66'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
 ALLOWED_HOSTS = []
 
+EMAIL_HOST = 'smtp.zoho.eu'
+EMAIL_HOST_USER = 'carlos1014tgn@zohomail.eu'
+EMAIL_HOST_PASSWORD = 'DhqaHifjLXg9'
+EMAIL_PORT = 587
+EMAIL_USE_TLS = True
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 
 # Application definition
 
@@ -129,3 +135,6 @@ STATICFILES_DIRS = [
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+
+
