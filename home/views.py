@@ -24,3 +24,9 @@ def email(request):
 
 def success(request):
     return render(request, 'home/success.html')
+
+def projects(request):
+    return render(request, 'home/under_developement.html')
+
+def analytics(request):
+    return render(request, 'home/under_developement.html')
